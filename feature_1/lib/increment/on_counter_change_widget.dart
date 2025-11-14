@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
 import 'package:scale_framework/scale_framework.dart';
 
-import 'increment_bloc.dart';
+import 'increment_state_manager.dart';
 
 class OnCounterChangeWidget extends StatelessWidget {
   final Widget Function(BuildContext, int) builder;

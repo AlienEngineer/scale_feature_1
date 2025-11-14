@@ -1,6 +1,6 @@
 import 'package:scale_framework/scale_framework.dart';
 
-import 'increment_bloc.dart';
+import 'increment_state_manager.dart';
 
 class IncrementModule extends FeatureModule {
   @override
