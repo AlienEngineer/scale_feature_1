@@ -4,9 +4,7 @@ import 'package:scale_framework/scale_framework.dart';
 
 void main() {
   var registry = FeatureModulesRegistry(
-    featureModules: [
-      IncrementModule(),
-    ],
+    featureModules: [IncrementModule(), GarageModule()],
   );
   runApp(MyApp(registry));
 }
@@ -53,6 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            GarageWidget(),
             const Text(
               'You have pushed the button this many times:',
             ),

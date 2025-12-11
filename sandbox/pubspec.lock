@@ -71,7 +71,7 @@ packages:
       path: "../feature_1"
       relative: true
     source: path
-    version: "2.0.25"
+    version: "2.0.29"
   flutter:
     dependency: "direct main"
     description: flutter
