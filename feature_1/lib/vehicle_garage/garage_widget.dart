@@ -8,7 +8,7 @@ class GarageWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return StateBuilder<GarageLoader, List<Vehicle>>(
+    return StateBuilder<List<Vehicle>>(
       builder: (context, state) => Column(
         children: state
             .map((vehicle) => VehicleSelectionWidget(

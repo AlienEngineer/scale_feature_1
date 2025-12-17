@@ -9,6 +9,5 @@ class OnCounterChangeWidget extends StatelessWidget {
   const OnCounterChangeWidget({super.key, required this.builder});
 
   @override
-  Widget build(BuildContext context) =>
-      StateBuilder<IncrementStateManager, int>(builder: builder);
+  Widget build(BuildContext context) => StateBuilder<int>(builder: builder);
 }

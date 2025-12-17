@@ -64,12 +64,10 @@ void main() {
 Future<void> pumpApp(WidgetTester tester) async {
   await tester.pumpWidget(MaterialApp(
     home: ModuleSetup(
-      registry: FeatureModulesRegistry(
-        featureModules: [
-          IncrementModule(),
-          GarageModule(),
-        ],
-      ),
+      featureModules: [
+        IncrementModule(),
+        GarageModule(),
+      ],
       child: TestWidget(),
     ),
   ));
