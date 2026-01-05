@@ -3,17 +3,10 @@ import 'package:feature_1/vehicle_garage/vehicle_selector/vehicle_selected.dart'
 import 'package:scale_framework/scale_framework.dart';
 
 class GarageModule extends FeatureModule {
-  final DataProducer<Vehicle> vehicleSelectedNotifier;
-  GarageModule({
-    this.vehicleSelectedNotifier = const SubVehicleSelectedNotifier(),
-  });
-
   @override
   void setup(PublicRegistry registry) {
     registry.addGlobalStateManager(GarageLoader());
-    registry.addGlobalStateManager(
-      VehicleSelectionStateManager(vehicleSelectedNotifier),
-    );
+    registry.addGlobalStateManager(VehicleSelectionStateManager());
   }
 }
 
