@@ -84,7 +84,7 @@ GarageWidget()
 </td>
 <td>
 
-Produces:
+Produces on selection:
 ```dart
 class Vehicle {
   final String vin;
