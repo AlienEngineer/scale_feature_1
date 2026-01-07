@@ -5,13 +5,7 @@ import 'package:scale_framework/scale_framework.dart';
 class GarageModule extends FeatureModule {
   @override
   void setup(PublicRegistry registry) {
-    registry.addGlobalStateManager(GarageLoader());
-    registry.addGlobalStateManager(VehicleSelectionStateManager());
+    registry.addGlobalStateManager((_) => GarageLoader());
+    registry.addGlobalStateManager((_) => VehicleSelectionStateManager());
   }
-}
-
-class SubVehicleSelectedNotifier implements DataProducer<Vehicle> {
-  const SubVehicleSelectedNotifier();
-  @override
-  void push(Vehicle vehicle) {}
 }

@@ -191,10 +191,10 @@ packages:
     dependency: "direct main"
     description:
       name: scale_framework
-      sha256: b1d48badb463398126a1fd58652211af2eb56bf529428b4644e79073f77a2d46
+      sha256: a6115849042edf36e480d390ede0ae7ad69965d31c891c73326aca94250367f7
       url: "https://onepub.dev/api/ynnonoflyg/"
     source: hosted
-    version: "1.0.21"
+    version: "1.0.23"
   sky_engine:
     dependency: transitive
     description: flutter

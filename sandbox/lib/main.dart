@@ -3,15 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:scale_framework/scale_framework.dart';
 
 void main() {
-  var registry = FeatureModulesRegistry(
-    featureModules: [IncrementModule(), GarageModule()],
-  );
-  runApp(MyApp(registry));
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  final FeatureModulesRegistry registry;
-  const MyApp(this.registry, {super.key});
+  const MyApp({super.key});
 
   // This widget is the root of your application.
   @override
@@ -23,7 +19,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: ModuleSetup(
-        registry: registry,
+        featureModules: [IncrementModule(), GarageModule()],
         child: const MyHomePage(title: 'Flutter Demo Home Page'),
       ),
     );
