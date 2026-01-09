@@ -30,7 +30,7 @@ IncrementCounterWidget()
 </td>
 <td>
 
-![](/documentation/IncrementCounterWidget.png)
+![](documentation/IncrementCounterWidget.png)
 </td>
 <td>N/A</td>
 </tr>
